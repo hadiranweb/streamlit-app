@@ -45,7 +45,7 @@ if uploaded_file:
     def translate_with_deepseek(text):
         load_dotenv()
         client = InferenceClient(
-            model="arvan/DeepSeek-VL-7B-v1.5-fa",
+            model="deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
             token=os.getenv("HUGGINGFACE_TOKEN")
         )
         prompt = f"""
